@@ -7,7 +7,7 @@ module alu(
 
 always @(*) begin
     case(sel)
-        2'b00: y = a + b;
+        2'b00: y = a + b + 2;
         2'b01: y = a - b;
         2'b10: y = a & b;
         2'b11: y = a | b;
