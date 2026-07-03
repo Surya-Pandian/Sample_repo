@@ -14,6 +14,8 @@ alu dut (
 );
 
 initial begin
+    
+    $display("INSIDE LOGIC");
 
     a = 4'd5; b = 4'd3; sel = 2'b00; #10; // Add
     a = 4'd8; b = 4'd2; sel = 2'b01; #10; // Sub
